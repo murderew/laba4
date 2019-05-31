@@ -27,7 +27,7 @@ public:
 	}
 	~Tiles()
 	{
-		cout << "Destrcution" ;
+		cout << "Destrcution";
 	}
 
 	void GetData()

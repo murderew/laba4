@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <string>
 #include <locale>
@@ -12,7 +13,10 @@ private:
 	int years;
 
 public:
-
+	void setChild()
+	{
+		cout << " Child with name  " << this->name << "  secondname  " << this->secondname << "  age  " << this->years;
+	}
 	Child()
 	{
 		cout << "Enter name: ";
@@ -23,13 +27,16 @@ public:
 		cin >> this->years;
 		cout << endl;
 	}
+	Child(const Child&copy) {};
+
+	Child(string na, string sur, int a)
+	{
+		name = na;
+		secondname = sur;
+		years = a;
+	}
 	~Child()
 	{
 		cout << "Destruction ";
-	}
-
-	void setChild()
-	{
-		cout << " Child with name  " << this->name << "  secondname  " << this->secondname << "  age  " << this->years;
 	}
 };
