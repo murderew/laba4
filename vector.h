@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <string>
 
@@ -29,13 +30,17 @@ public:
 		cin >> c;
 
 	}
+	~Vector()
+	{
+		cout << "Destruction";
+	}
 
-	void module() 
+	void module()
 	{
 		cout << "The modulus of your vector is :" << r << endl;
 		cout << "\n";
 	}
-	void Vecplus() 
+	void Vecplus()
 	{
 		switch (c) {
 		case '+':

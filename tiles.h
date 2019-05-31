@@ -1,4 +1,4 @@
-#include "pch.h"
+#pragma once
 #include <iostream>
 #include <string>
 #include <locale>
@@ -27,19 +27,12 @@ public:
 	}
 	~Tiles()
 	{
-		cout << "Destrcution with" << this->brand;
+		cout << "Destrcution" ;
 	}
 
 	void GetData()
 	{
-	/*	cout << "Введите название кафеля: ";
-		cin >> brand;
-		cout << "Длина: ";
-		cin >> size_h;
-		cout << "Вес: ";
-		cin >> size_w;
-		cout << "Цена:";
-		cin >> price;*/
-		cout << "Brand name: " << brand << " Parametrs: " << size_h << "large, " << size_w << " weight, " << " price " << price << "$.";
+
+		cout << "Brand name: " << brand << " Parametrs: " << size_h << " large, " << size_w << " weight, " << " price " << price << "$.";
 	}
 };
