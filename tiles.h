@@ -6,13 +6,11 @@
 using namespace std;
 class Tiles
 {
-private:
+public:
 	string brand;
 	int size_h;
 	int size_w;
 	int price;
-public:
-
 	Tiles()
 	{
 		cout << "Enter brand name: ";
@@ -24,6 +22,14 @@ public:
 		cout << "Enter price: ";
 		cin >> this->price;
 		cout << endl;
+	}
+	Tiles(const Tiles&copy) {};
+	Tiles(string bra,int sizh,int sizw,int pri)
+	{
+		brand = bra;
+		size_h = sizh;
+		size_w = sizw;
+		price = pri;
 	}
 	~Tiles()
 	{
